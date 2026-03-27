@@ -3,7 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import chalk from 'chalk';
 import ora from 'ora';
-import { loadConfig, TEMPLATE_MANIFEST } from '@migration-copilot/sdk';
+import { loadConfig, TEMPLATE_MANIFEST } from '@robertoborges/migration-copilot-sdk';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const templatesDir = path.resolve(__dirname, '..', '..', 'templates');

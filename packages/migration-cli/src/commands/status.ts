@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import chalk from 'chalk';
-import { loadConfig } from '@migration-copilot/sdk';
+import { loadConfig } from '@robertoborges/migration-copilot-sdk';
 
 export async function statusCommand(): Promise<void> {
   const cwd = process.cwd();

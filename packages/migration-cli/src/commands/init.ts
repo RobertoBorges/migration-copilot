@@ -9,12 +9,12 @@ import {
   createConfig,
   saveConfig,
   TEMPLATE_MANIFEST,
-} from '@migration-copilot/sdk';
+} from '@robertoborges/migration-copilot-sdk';
 import type {
   AzurePlatform,
   IaCTool,
   DatabaseTarget,
-} from '@migration-copilot/sdk';
+} from '@robertoborges/migration-copilot-sdk';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const templatesDir = path.resolve(__dirname, '..', '..', 'templates');

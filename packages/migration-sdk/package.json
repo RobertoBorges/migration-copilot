@@ -1,5 +1,5 @@
 {
-  "name": "@migration-copilot/sdk",
+  "name": "@robertoborges/migration-copilot-sdk",
   "version": "1.0.0",
   "description": "SDK for migration-copilot — framework detection, config schema, and phase orchestration",
   "type": "module",

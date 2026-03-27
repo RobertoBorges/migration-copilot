@@ -1,5 +1,5 @@
 import chalk from 'chalk';
-import { loadConfig } from '@migration-copilot/sdk';
+import { loadConfig } from '@robertoborges/migration-copilot-sdk';
 
 export async function assessCommand(): Promise<void> {
   const cwd = process.cwd();

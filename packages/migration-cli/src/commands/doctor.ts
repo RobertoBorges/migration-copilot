@@ -1,6 +1,6 @@
 import { execSync } from 'node:child_process';
 import chalk from 'chalk';
-import { loadConfig } from '@migration-copilot/sdk';
+import { loadConfig } from '@robertoborges/migration-copilot-sdk';
 
 function tryExec(command: string): string | null {
   try {

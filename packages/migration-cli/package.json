@@ -1,5 +1,5 @@
 {
-  "name": "@migration-copilot/cli",
+  "name": "@robertoborges/migration-copilot-cli",
   "version": "1.0.0",
   "description": "CLI tool for scaffolding GitHub Copilot migration agents — migrate and modernize Java/.NET apps to Azure",
   "type": "module",
@@ -22,7 +22,7 @@
     "chalk": "^5.4.0",
     "ora": "^8.1.0",
     "@inquirer/prompts": "^7.0.0",
-    "@migration-copilot/sdk": "1.0.0"
+    "@robertoborges/migration-copilot-sdk": "1.0.0"
   },
   "engines": {
     "node": ">=22.5.0"
