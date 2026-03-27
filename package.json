@@ -1,0 +1,33 @@
+{
+  "name": "@migration-copilot/root",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "prebuild": "node scripts/sync-templates.mjs",
+    "build": "npm run build -w packages/migration-sdk && npm run build -w packages/migration-cli",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit -p packages/migration-sdk/tsconfig.json && tsc --noEmit -p packages/migration-cli/tsconfig.json"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  },
+  "keywords": [
+    "copilot",
+    "migration",
+    "azure",
+    "modernization",
+    "dotnet",
+    "java"
+  ],
+  "license": "MIT"
+}
