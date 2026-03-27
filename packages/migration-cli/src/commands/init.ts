@@ -164,7 +164,7 @@ export async function initCommand(): Promise<void> {
   console.log();
   console.log(chalk.bold.cyan('🚀 Next steps:'));
   console.log(chalk.white('   1. Open GitHub Copilot Chat'));
-  console.log(chalk.white('   2. Use @Code-Migration-Modernization agent'));
+  console.log(chalk.white('   2. Use @migrate-copilot agent'));
   console.log(chalk.white('   3. Or run: migrate-copilot assess'));
   console.log();
 }

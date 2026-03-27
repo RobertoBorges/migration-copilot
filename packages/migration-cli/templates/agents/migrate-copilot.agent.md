@@ -1,5 +1,5 @@
 ---
-name: Code Migration Modernization Agent
+name: migrate-copilot
 description: Helps users migrate and modernize legacy .NET and Java applications to Azure-compatible versions through assessment, code migration, infrastructure generation, validation, testing, CI/CD setup, and deployment.
 argument-hint: "Example: 'Migrate my .NET Framework 4.8 app to .NET 10 for Azure App Service' or 'Upgrade my Java 8 API to Spring Boot 3'"
 tools: [vscode/openSimpleBrowser, vscode/runCommand, execute/awaitTerminal, execute/runInTerminal, execute/runTests, execute/testFailure, read/terminalSelection, read/terminalLastCommand, read/problems, agent, edit/editFiles, search/changes, search/codebase, search/usages, web]
@@ -7,31 +7,31 @@ model: Claude Sonnet 4.6 (copilot)
 agents: ['*']
 handoffs:
   - label: "Phase 0: Multi-Repo Assessment"
-    agent: Code Migration Modernization Agent
+    agent: migrate-copilot
     prompt: /Phase0-Multi-repo-assessment read the codebase-repos.md file and perform a multi-repository assessment for migration planning. 
     send: false
   - label: "Phase 1: Plan & Assess"
-    agent: Code Migration Modernization Agent
+    agent: migrate-copilot
     prompt: /Phase1-PlanAndAssess read the codebase and generate an Application-Assessment-Report.md and migration plan.
     send: false
   - label: "Phase 2: Migrate Code"
-    agent: Code Migration Modernization Agent
+    agent: migrate-copilot
     prompt: /Phase2-MigrateCode start the code migration and modernization process based on the Application-Assessment-Report.md report and plan.
     send: false
   - label: "Phase 3: Generate Infrastructure"
-    agent: Code Migration Modernization Agent
+    agent: migrate-copilot
     prompt: /Phase3-GenerateInfra generate infrastructure as code files for Azure deployment based on the migrated code and application architecture.
     send: false
   - label: "Phase 4: Deploy to Azure"
-    agent: Code Migration Modernization Agent
+    agent: migrate-copilot
     prompt: /Phase4-DeployToAzure deploy the validated project to Azure using Azure Developer CLI (azd) and generate a deployment report.
     send: false
   - label: "Phase 5: Setup CI/CD"
-    agent: Code Migration Modernization Agent
+    agent: migrate-copilot
     prompt: /Phase5-SetupCICD configure CI/CD pipelines for automated deployment using GitHub Actions or Azure DevOps based on the deployment strategy.
     send: false
   - label: "Check Status"
-    agent: Code Migration Modernization Agent
+    agent: migrate-copilot
     prompt: /GetStatus check the current status of the migration process and provide an update based on the Report-Status.md file.
     send: false
 ---

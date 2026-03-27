@@ -17,7 +17,7 @@ cd my-legacy-app
 migrate-copilot init
 
 # Open Copilot Chat and use the agent
-# @Code-Migration-Modernization
+# @migrate-copilot
 ```
 
 Or use npx without installing:
@@ -44,7 +44,7 @@ Running `migrate-copilot init` creates:
 your-repo/
 ├── .github/
 │   ├── agents/
-│   │   └── Code-Migration-Modernization.agent.md    # Custom Copilot agent
+│   │   └── migrate-copilot.agent.md                  # Custom Copilot agent
 │   ├── prompts/
 │   │   ├── Phase0-Multi-repo-assessment.prompt.md   # Multi-repo assessment
 │   │   ├── Phase1-PlanAndAssess.prompt.md            # Planning & assessment

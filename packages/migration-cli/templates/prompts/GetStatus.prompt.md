@@ -2,7 +2,7 @@
 name: Get Migration Status
 description: Check the current migration status and progress
 argument-hint: "Just run this command to see current status, or add context like 'Show status for Phase 2'"
-agent: Code Migration Modernization Agent
+agent: migrate-copilot
 ---
 
 Retrieve status of the modernization process
