@@ -160,11 +160,11 @@ export async function initCommand(): Promise<void> {
     );
   }
 
-  // Next steps
+  // Launch Copilot CLI with the agent
   console.log();
-  console.log(chalk.bold.cyan('🚀 Next steps:'));
-  console.log(chalk.white('   1. Open GitHub Copilot Chat'));
-  console.log(chalk.white('   2. Use @migrate-copilot agent'));
-  console.log(chalk.white('   3. Or run: migrate-copilot assess'));
+  console.log(chalk.bold.cyan('🚀 Launching migrate-copilot agent...'));
   console.log();
+
+  const { runCommand } = await import('./run.js');
+  await runCommand();
 }
