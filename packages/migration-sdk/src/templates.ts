@@ -146,6 +146,28 @@ export const TEMPLATE_MANIFEST: readonly TemplateEntry[] = [
     ownership: 'cli-owned',
   },
 
+  // ── Hooks (security, validation, session lifecycle) ──
+  {
+    source: 'hooks/security.json',
+    target: '.github/hooks/security.json',
+    ownership: 'cli-owned',
+  },
+  {
+    source: 'hooks/validation.json',
+    target: '.github/hooks/validation.json',
+    ownership: 'cli-owned',
+  },
+  {
+    source: 'hooks/session-lifecycle.json',
+    target: '.github/hooks/session-lifecycle.json',
+    ownership: 'cli-owned',
+  },
+  {
+    source: 'hooks/scripts',
+    target: '.github/hooks/scripts',
+    ownership: 'cli-owned',
+  },
+
   // ── Migration config (user-owned) ──
   {
     source: 'migration.config.json',
