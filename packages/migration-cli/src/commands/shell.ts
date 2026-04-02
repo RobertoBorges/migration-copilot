@@ -48,12 +48,12 @@ function showMenu(config: MigrationConfig): void {
 
 function launchPhase(phase: number, config: MigrationConfig): void {
   const prompts: Record<number, string> = {
-    0: 'Phase0-Multi-repo-assessment',
-    1: 'Phase1-PlanAndAssess',
-    2: 'Phase2-MigrateCode',
-    3: 'Phase3-GenerateInfra',
-    4: 'Phase4-DeployToAzure',
-    5: 'Phase5-SetupCICD',
+    0: 'phase0-multi-repo-assessment',
+    1: 'phase1-planandassess',
+    2: 'phase2-migratecode',
+    3: 'phase3-generateinfra',
+    4: 'phase4-deploytoazure',
+    5: 'phase5-setupcicd',
   };
 
   const promptName = prompts[phase];

@@ -20,7 +20,7 @@ export async function assessCommand(): Promise<void> {
   console.log();
   console.log(chalk.bold.cyan('📋 To run the assessment:'));
   console.log(chalk.white('   1. Open GitHub Copilot Chat'));
-  console.log(chalk.white('   2. Type: /Phase1-PlanAndAssess'));
+  console.log(chalk.white('   2. Type: /phase1-planandassess'));
   console.log(
     chalk.white(
       '   3. The agent will analyze your codebase and generate reports/Application-Assessment-Report.md',

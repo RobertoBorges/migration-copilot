@@ -39,38 +39,38 @@ export const TEMPLATE_MANIFEST: readonly TemplateEntry[] = [
 
   // ── Prompts ──
   {
-    source: 'prompts/GetStatus.prompt.md',
-    target: '.github/prompts/GetStatus.prompt.md',
+    source: 'prompts/getstatus.prompt.md',
+    target: '.github/prompts/getstatus.prompt.md',
     ownership: 'cli-owned',
   },
   {
-    source: 'prompts/Phase0-Multi-repo-assessment.prompt.md',
-    target: '.github/prompts/Phase0-Multi-repo-assessment.prompt.md',
+    source: 'prompts/phase0-multi-repo-assessment.prompt.md',
+    target: '.github/prompts/phase0-multi-repo-assessment.prompt.md',
     ownership: 'cli-owned',
   },
   {
-    source: 'prompts/Phase1-PlanAndAssess.prompt.md',
-    target: '.github/prompts/Phase1-PlanAndAssess.prompt.md',
+    source: 'prompts/phase1-planandassess.prompt.md',
+    target: '.github/prompts/phase1-planandassess.prompt.md',
     ownership: 'cli-owned',
   },
   {
-    source: 'prompts/Phase2-MigrateCode.prompt.md',
-    target: '.github/prompts/Phase2-MigrateCode.prompt.md',
+    source: 'prompts/phase2-migratecode.prompt.md',
+    target: '.github/prompts/phase2-migratecode.prompt.md',
     ownership: 'cli-owned',
   },
   {
-    source: 'prompts/Phase3-GenerateInfra.prompt.md',
-    target: '.github/prompts/Phase3-GenerateInfra.prompt.md',
+    source: 'prompts/phase3-generateinfra.prompt.md',
+    target: '.github/prompts/phase3-generateinfra.prompt.md',
     ownership: 'cli-owned',
   },
   {
-    source: 'prompts/Phase4-DeployToAzure.prompt.md',
-    target: '.github/prompts/Phase4-DeployToAzure.prompt.md',
+    source: 'prompts/phase4-deploytoazure.prompt.md',
+    target: '.github/prompts/phase4-deploytoazure.prompt.md',
     ownership: 'cli-owned',
   },
   {
-    source: 'prompts/Phase5-SetupCICD.prompt.md',
-    target: '.github/prompts/Phase5-SetupCICD.prompt.md',
+    source: 'prompts/phase5-setupcicd.prompt.md',
+    target: '.github/prompts/phase5-setupcicd.prompt.md',
     ownership: 'cli-owned',
   },
 

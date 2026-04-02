@@ -32,7 +32,7 @@ export async function runCommand(): Promise<void> {
   console.log();
   console.log(chalk.bold.cyan('🚀 Launching migrate-copilot agent...'));
   console.log(chalk.dim('   Loading agent from .github/agents/migrate-copilot.agent.md'));
-  console.log(chalk.dim('   Type /Phase1-PlanAndAssess to start, or ask anything'));
+  console.log(chalk.dim('   Type /phase1-planandassess to start, or ask anything'));
   console.log();
 
   // Launch Copilot CLI with the agent
