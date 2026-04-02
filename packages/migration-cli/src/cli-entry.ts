@@ -6,7 +6,6 @@ import { statusCommand } from './commands/status.js';
 import { upgradeCommand } from './commands/upgrade.js';
 import { doctorCommand } from './commands/doctor.js';
 import { runCommand } from './commands/run.js';
-import { shellCommand } from './commands/shell.js';
 
 const program = new Command();
 
@@ -24,12 +23,12 @@ program
 
 program
   .command('assess')
-  .description('Run the migration assessment phase')
+  .description('Show assessment guidance')
   .action(assessCommand);
 
 program
   .command('status')
-  .description('Show migration status and phase progress')
+  .description('Show migration progress across all phases')
   .action(statusCommand);
 
 program
@@ -47,14 +46,9 @@ program
   .description('Launch Copilot CLI with the migrate-copilot agent')
   .action(runCommand);
 
-program
-  .command('shell')
-  .description('Interactive shell with guided phase navigation')
-  .action(shellCommand);
-
-// Default to shell if no command given
+// Default to launching Copilot CLI agent if no command given
 if (process.argv.length <= 2) {
-  shellCommand();
+  runCommand();
 } else {
   program.parse();
 }
