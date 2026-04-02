@@ -32,7 +32,16 @@ export async function runCommand(): Promise<void> {
   console.log();
   console.log(chalk.bold.cyan('🚀 Launching migrate-copilot agent...'));
   console.log(chalk.dim('   Loading agent from .github/agents/migrate-copilot.agent.md'));
-  console.log(chalk.dim('   Type /phase1-planandassess to start, or ask anything'));
+  console.log();
+  console.log(chalk.white('   Available phases (paste as a message):'));
+  console.log(chalk.dim('   ─────────────────────────────────────'));
+  console.log(chalk.white('   "Run phase0-multi-repo-assessment"') + chalk.dim('  — Multi-repo analysis'));
+  console.log(chalk.white('   "Run phase1-planandassess"') + chalk.dim('          — Assessment & planning'));
+  console.log(chalk.white('   "Run phase2-migratecode"') + chalk.dim('            — Code migration'));
+  console.log(chalk.white('   "Run phase3-generateinfra"') + chalk.dim('          — Infrastructure as Code'));
+  console.log(chalk.white('   "Run phase4-deploytoazure"') + chalk.dim('          — Deploy to Azure'));
+  console.log(chalk.white('   "Run phase5-setupcicd"') + chalk.dim('              — CI/CD pipelines'));
+  console.log(chalk.white('   "Run getstatus"') + chalk.dim('                     — Check progress'));
   console.log();
 
   // Launch Copilot CLI with the agent
