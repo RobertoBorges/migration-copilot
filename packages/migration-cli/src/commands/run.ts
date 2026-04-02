@@ -39,7 +39,6 @@ export async function runCommand(): Promise<void> {
   const child = spawn('copilot', ['--agent', 'migrate-copilot'], {
     cwd,
     stdio: 'inherit',
-    shell: true,
   });
 
   child.on('error', (err) => {
