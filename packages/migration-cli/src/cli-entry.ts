@@ -5,6 +5,8 @@ import { assessCommand } from './commands/assess.js';
 import { statusCommand } from './commands/status.js';
 import { upgradeCommand } from './commands/upgrade.js';
 import { doctorCommand } from './commands/doctor.js';
+import { runCommand } from './commands/run.js';
+import { shellCommand } from './commands/shell.js';
 
 const program = new Command();
 
@@ -40,4 +42,19 @@ program
   .description('Check prerequisites and environment setup')
   .action(doctorCommand);
 
-program.parse();
+program
+  .command('run')
+  .description('Launch Copilot CLI with the migrate-copilot agent')
+  .action(runCommand);
+
+program
+  .command('shell')
+  .description('Interactive shell with guided phase navigation')
+  .action(shellCommand);
+
+// Default to shell if no command given
+if (process.argv.length <= 2) {
+  shellCommand();
+} else {
+  program.parse();
+}
