@@ -34,7 +34,7 @@ export async function runCommand(): Promise<void> {
   console.log();
 
   // Launch Copilot CLI with the agent and a welcome message
-  const child = spawn('copilot', ['--agent', 'migrate-copilot', '--message', 'hi'], {
+  const child = spawn('copilot', ['--agent', 'migrate-copilot'], {
     cwd,
     stdio: 'inherit',
   });
