@@ -1,5 +1,5 @@
 import chalk from 'chalk';
-import { loadConfig } from '@robertoborges/migration-copilot-sdk';
+import { loadConfig } from '@robertoborges/cafmm-sdk';
 
 export async function assessCommand(): Promise<void> {
   const cwd = process.cwd();
@@ -10,7 +10,7 @@ export async function assessCommand(): Promise<void> {
     console.log(chalk.red('❌ No migration.config.json found.'));
     console.log(
       chalk.white('   Run ') +
-        chalk.bold('migrate-copilot init') +
+        chalk.bold('cafmm init') +
         chalk.white(' first.'),
     );
     console.log();

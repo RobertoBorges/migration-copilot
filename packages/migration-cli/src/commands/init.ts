@@ -9,12 +9,12 @@ import {
   createConfig,
   saveConfig,
   TEMPLATE_MANIFEST,
-} from '@robertoborges/migration-copilot-sdk';
+} from '@robertoborges/cafmm-sdk';
 import type {
   AzurePlatform,
   IaCTool,
   DatabaseTarget,
-} from '@robertoborges/migration-copilot-sdk';
+} from '@robertoborges/cafmm-sdk';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const templatesDir = path.resolve(__dirname, '..', '..', 'templates');
@@ -39,7 +39,7 @@ export async function initCommand(): Promise<void> {
   // Welcome banner
   console.log();
   console.log(
-    chalk.bold.cyan('🚀 Migration Copilot — Java/.NET → Azure Modernization'),
+    chalk.bold.cyan('🚀 cafmm — CAF Migrate & Modernize — Java/.NET → Azure Modernization'),
   );
   console.log();
 
@@ -162,7 +162,7 @@ export async function initCommand(): Promise<void> {
 
   // Launch Copilot CLI with the agent
   console.log();
-  console.log(chalk.bold.cyan('🚀 Launching migrate-copilot agent...'));
+  console.log(chalk.bold.cyan('🚀 Launching cafmm agent...'));
   console.log();
 
   const { runCommand } = await import('./run.js');

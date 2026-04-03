@@ -1,7 +1,7 @@
 {
-  "name": "@robertoborges/migration-copilot-sdk",
+  "name": "@robertoborges/cafmm-sdk",
   "version": "1.0.0",
-  "description": "SDK for migration-copilot — framework detection, config schema, and phase orchestration",
+  "description": "SDK for cafmm — framework detection, config schema, and phase orchestration",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

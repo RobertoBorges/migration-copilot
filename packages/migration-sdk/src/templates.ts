@@ -32,8 +32,8 @@ function needsContainer(config: MigrationConfig): boolean {
 export const TEMPLATE_MANIFEST: readonly TemplateEntry[] = [
   // ── Agent ──
   {
-    source: 'agents/migrate-copilot.agent.md',
-    target: '.github/agents/migrate-copilot.agent.md',
+    source: 'agents/cafmm.agent.md',
+    target: '.github/agents/cafmm.agent.md',
     ownership: 'cli-owned',
   },
 

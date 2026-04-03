@@ -1,6 +1,6 @@
 import { execSync } from 'node:child_process';
 import chalk from 'chalk';
-import { loadConfig } from '@robertoborges/migration-copilot-sdk';
+import { loadConfig } from '@robertoborges/cafmm-sdk';
 
 function tryExec(command: string): string | null {
   try {
@@ -30,7 +30,7 @@ export async function doctorCommand(): Promise<void> {
   const config = loadConfig(cwd);
 
   console.log();
-  console.log(chalk.bold.cyan('🩺 Migration Copilot — Environment Check'));
+  console.log(chalk.bold.cyan('🩺 cafmm — CAF Migrate & Modernize — Environment Check'));
   console.log();
 
   const checks: {

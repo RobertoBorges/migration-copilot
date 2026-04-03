@@ -2,7 +2,7 @@
 name: Phase5-SetupCICD
 description: Configure GitHub Actions or Azure DevOps pipelines for automated deployment
 argument-hint: "Specify CI/CD platform, e.g., 'Setup GitHub Actions' or 'Configure Azure DevOps pipelines'"
-agent: migrate-copilot
+agent: cafmm
 ---
 
 Set up CI/CD pipelines for automated deployment and continuous integration

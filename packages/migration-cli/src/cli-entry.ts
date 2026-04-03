@@ -10,7 +10,7 @@ import { runCommand } from './commands/run.js';
 const program = new Command();
 
 program
-  .name('migrate-copilot')
+  .name('cafmm')
   .version('1.0.0')
   .description(
     'Scaffold GitHub Copilot migration agents for Java/.NET → Azure modernization',
@@ -43,7 +43,7 @@ program
 
 program
   .command('run')
-  .description('Launch Copilot CLI with the migrate-copilot agent')
+  .description('Launch Copilot CLI with the cafmm agent')
   .action(runCommand);
 
 // Default to launching Copilot CLI agent if no command given

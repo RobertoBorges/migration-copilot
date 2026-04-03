@@ -2,7 +2,7 @@
 name: Phase2-MigrateCode
 description: Upgrade legacy .NET or Java application code to modern framework versions
 argument-hint: "Specify target framework if not already assessed, e.g., 'Migrate to .NET 10' or 'Upgrade to Spring Boot 3'"
-agent: migrate-copilot
+agent: cafmm
 ---
 
 Migrate application code to modern framework version compatible with Azure.

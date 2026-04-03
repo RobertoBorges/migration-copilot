@@ -1,6 +1,6 @@
 import { execSync, spawn } from 'node:child_process';
 import chalk from 'chalk';
-import { loadConfig } from '@robertoborges/migration-copilot-sdk';
+import { loadConfig } from '@robertoborges/cafmm-sdk';
 
 export async function runCommand(): Promise<void> {
   const cwd = process.cwd();
@@ -11,7 +11,7 @@ export async function runCommand(): Promise<void> {
     console.log(chalk.red('❌ No migration.config.json found.'));
     console.log(
       chalk.white('   Run ') +
-        chalk.bold('migrate-copilot init') +
+        chalk.bold('cafmm init') +
         chalk.white(' first.'),
     );
     console.log();
@@ -30,11 +30,11 @@ export async function runCommand(): Promise<void> {
   }
 
   console.log();
-  console.log(chalk.bold.cyan('🚀 Launching migrate-copilot agent...'));
+  console.log(chalk.bold.cyan('🚀 Launching cafmm agent...'));
   console.log();
 
   // Launch Copilot CLI with the agent and a welcome message
-  const child = spawn('copilot', ['--agent', 'migrate-copilot'], {
+  const child = spawn('copilot', ['--agent', 'cafmm'], {
     cwd,
     stdio: 'inherit',
   });

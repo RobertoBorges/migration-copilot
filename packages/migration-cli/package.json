@@ -1,10 +1,10 @@
 {
-  "name": "@robertoborges/migration-copilot-cli",
+  "name": "@robertoborges/cafmm",
   "version": "1.0.0",
-  "description": "CLI tool for scaffolding GitHub Copilot migration agents — migrate and modernize Java/.NET apps to Azure",
+  "description": "CLI for scaffolding GitHub Copilot migration agents — CAF Migrate & Modernize Java/.NET apps to Azure",
   "type": "module",
   "bin": {
-    "migrate-copilot": "./dist/cli-entry.js"
+    "cafmm": "./dist/cli-entry.js"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -22,7 +22,7 @@
     "chalk": "^5.4.0",
     "ora": "^8.1.0",
     "@inquirer/prompts": "^7.0.0",
-    "@robertoborges/migration-copilot-sdk": "1.0.0"
+    "@robertoborges/cafmm-sdk": "1.0.0"
   },
   "engines": {
     "node": ">=22.5.0"

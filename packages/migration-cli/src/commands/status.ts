@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import chalk from 'chalk';
-import { loadConfig } from '@robertoborges/migration-copilot-sdk';
+import { loadConfig } from '@robertoborges/cafmm-sdk';
 
 export async function statusCommand(): Promise<void> {
   const cwd = process.cwd();
@@ -33,7 +33,7 @@ export async function statusCommand(): Promise<void> {
     console.log();
     console.log(
       chalk.white('   Run ') +
-        chalk.bold('migrate-copilot assess') +
+        chalk.bold('cafmm assess') +
         chalk.white(' to begin Phase 1.'),
     );
     console.log();
@@ -42,7 +42,7 @@ export async function statusCommand(): Promise<void> {
 
   console.log();
   console.log(
-    chalk.red('❌ No migration found. Run `migrate-copilot init` first.'),
+    chalk.red('❌ No migration found. Run `cafmm init` first.'),
   );
   console.log();
 }

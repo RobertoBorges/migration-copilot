@@ -3,7 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import chalk from 'chalk';
 import ora from 'ora';
-import { loadConfig, TEMPLATE_MANIFEST } from '@robertoborges/migration-copilot-sdk';
+import { loadConfig, TEMPLATE_MANIFEST } from '@robertoborges/cafmm-sdk';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const templatesDir = path.resolve(__dirname, '..', '..', 'templates');
@@ -17,7 +17,7 @@ export async function upgradeCommand(): Promise<void> {
     console.log(chalk.red('❌ No migration.config.json found.'));
     console.log(
       chalk.white('   Run ') +
-        chalk.bold('migrate-copilot init') +
+        chalk.bold('cafmm init') +
         chalk.white(' first.'),
     );
     console.log();
